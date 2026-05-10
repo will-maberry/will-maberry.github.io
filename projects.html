@@ -2,116 +2,180 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WILL_MABERRY // 003</title>
+  <title>Will Maberry // Projects</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%2379c0ff' d='M483.5 227.6c4.5 4.5 4.5 11.8 0 16.3-2.1 2.1-4.9 3.3-7.8 3.3h-31.5c-4.6 30.6-18.6 58.5-39.4 81.4l22.3 22.3c6.4 6.4 6.4 16.7 0 23.1-3.2 3.2-7.4 4.8-11.5 4.8s-8.4-1.6-11.5-4.8l-22.3-22.3c-22.9 20.8-50.8 34.8-81.4 39.4v31.5c0 9-7.3 16.3-16.3 16.3-4.3 0-8.5-1.7-11.5-4.8s-4.8-7.2-4.8-11.5v-31.5c-30.6-4.6-58.5-18.6-81.4-39.4l-22.3 22.3c-6.4 6.4-16.7 6.4-23.1 0-6.4-6.4-6.4-16.7 0-23.1l22.3-22.3c-20.8-22.9-34.8-50.8-39.4-81.4H39.3c-9 0-16.3-7.3-16.3-16.3 0-4.3 1.7-8.5 4.8-11.5s7.2-4.8 11.5-4.8h31.5c4.6-30.6 18.6-58.5 39.4-81.4L87.9 111.4c-6.4-6.4-6.4-16.7 0-23.1 6.4-6.4 16.7-6.4 23.1 0l22.3 22.3c22.9-20.8 50.8-34.8 81.4-39.4V40c0-9 7.3-16.3 16.3-16.3 9 0 16.3 7.3 16.3 16.3v31.5c30.6 4.6 58.5 18.6 81.4 39.4l22.3-22.3c6.4-6.4 16.7-6.4 23.1 0 6.4 6.4 6.4 16.7 0 23.1l-22.3 22.3c20.8 22.9 34.8 50.8 39.4 81.4h31.5c9 0 16.3 7.3 16.3 16.3 0 4.3-1.7 8.5-4.8 11.5z'/></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
+<body class="home-page">
+
+<div class="curtain-layer">
 <div class="container">
-  <header style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 12vh; font-family: var(--font-mono); font-size: 0.7rem; margin-right: 5%;">
+
+  <header style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 11vh; font-family: var(--font-mono); font-size: 0.7rem; margin-right: 5%;">
     <div class="theme-toggle">
       <span>THEME</span>
       <button id="theme-toggle" type="button">DARK</button>
     </div>
+
     <div style="text-align: right;">
-      <span id="sys-status" style="color: var(--risk-green);">SYSTEM_READY</span> <br>
-      <span style="color: var(--ink-dim);">ENTRY_DATE: <span id="current-date">0000.00.00</span></span>
+      <span style="color: var(--risk-green);">STATUS: ACTIVE</span><br>
+      <span style="color: var(--ink-dim);">UPDATED: <span id="current-date">2026.05</span></span>
     </div>
   </header>
 
   <main>
-    
+
     <article style="position: relative;">
+
       <div class="stamp-container">
-        <div class="stamp">RESEARCH: USDA_ARS</div>
-        <div class="stamp">INDUSTRY: OPENAI</div>
-        <div class="stamp">STATION: UTA_CS</div>
+        <div class="stamp">OPENAI</div>
+        <div class="stamp">USDA_ARS</div>
+        <div class="stamp">MSU_COMPBIO</div>
       </div>
 
-      <span class="observation-label">OBSERVATION_03 // TECH_APPENDIX</span>
-      <h1>Technical Work Supporting <br>
-        <i><span style="color: var(--accent);">my</span></i> Ambitions.</h1>
+      <span class="observation-label">PROJECT ARCHIVE</span>
 
-      <div style="display: grid; gap: 45px;">
-        
+      <h1>
+        Technical Work <br>
+        <i><span style="color: var(--accent);">outside</span></i><br>
+        Research.
+      </h1>
+
+      <p style="font-size: 1.5rem; max-width: 610px; margin-bottom: 2.75rem;">
+        A collection of selected projects, spanning teaching tools to applied ML systems.
+        These projects revolve around
+        <span style="color: var(--accent);">building interpretable, interactive software around technical ideas.</span>
+      </p>
+
+      <div style="display: grid; gap: 34px; margin-top: 2rem;">
+
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">ASL_RECOGNITION // COMPUTER_VISION</span>
-          <p>Real-time computer vision + ML pipeline built from a custom dataset of 2,000+ labeled samples.
-            Focused on reliable live inference, confidence controls, and accessible feedback via text and TTS.
+          <span class="label">ASL_RECOGNITION // REAL_TIME_ML</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            American Sign Language Recognizer
+          </h2>
+          <p class="small">
+            Real-time ASL recognition system using MediaPipe hand landmarks, TensorFlow, and OpenCV
+            for webcam-based gesture classification and live inference.
+          </p>
+          <p class="small">
+            Built a custom 2,000+ sample dataset, trained a multi-class hand-sign classifier, and added
+            confidence thresholding, temporal stabilization, interactive visualization, and text-to-speech output.
           </p>
         </section>
 
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">NEURAL_NET_SCRATCH // FOUNDATIONAL_MODELING</span>
-          <p>Manual implementation of a feedforward network (MNIST @ 95%).
-            Built to make gradient flow, parameter updates, and model behavior interpretable.
+          <span class="label">ALGORITHM_PLATFORM // EDUCATIONAL_VISUALIZATION</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            Algorithm Learning Platform
+          </h2>
+          <p class="small">
+            Interactive educational platform built in Elm to visualize 20+ algorithms and data structures,
+            including sorting algorithms, graph traversal, heaps, trees, and foundational computational processes.
           </p>
-        </section>
-
-        <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">ALGORITHM_LEARNING_PLATFORM // PEDAGOGY</span>
-          <p>Interactive platform built in Elm, visualizing 20+ algorithmic processes step-by-step.
-            Used by UTA faculty for live lectures and self-paced study.
+          <p class="small">
+            Adopted by UTA Computer Science faculty as supplemental instructional material,
+            supporting classroom lectures and self-paced student learning.
           </p>
           <a href="https://www.willmaberry.com/Algorithms-And-Data-Structures/" class="btn" target="_blank">
-            DEPLOY_ALGOS_PLATFORM
+            OPEN_ALGORITHM_PLATFORM
           </a>
         </section>
 
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">QUEENS_LOGIC_GAME // CONSTRAINT_SATISFACTION</span>
-          <p>Full-stack puzzle system with a flood-fill generator that guarantees unique solutions.
-            Emphasizes constraint satisfaction, search, and API design.
+          <span class="label">QUEENS_ENGINE // CONSTRAINT_SYSTEMS</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            Queens Logic Game
+          </h2>
+          <p class="small">
+            Full-stack puzzle system centered on constraint satisfaction, board generation,
+            and API-backed game logic.
+          </p>
+          <p class="small">
+            Built a flood-fill puzzle generator designed to produce valid boards with unique solutions,
+            emphasizing search constraints, state validation, and interactive play.
           </p>
           <a href="https://games.willmaberry.com/" class="btn" target="_blank">
-            ACCESS_QUEENS_ENGINE
+            OPEN_QUEENS_ENGINE
           </a>
+        </section>
+
+        <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
+          <span class="label">NEURAL_NET_WALKTHROUGH // MODEL_FOUNDATIONS</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            Neural Network Walkthrough
+          </h2>
+          <p class="small">
+            Educational walkthrough implementing a feedforward neural network on MNIST to make
+            forward propagation, gradient descent, parameter updates, and model behavior more interpretable.
+          </p>
+          <p class="small">
+            Designed less as a benchmark project and more as a first-principles explanation of how
+            neural networks learn from structured numerical data.
+          </p>
         </section>
 
       </div>
     </article>
 
     <aside class="marginalia">
-      <div style="margin-bottom: 50px;">
-        <span class="observation-label">GITHUB_MANIFEST</span>
-        <strong>USER: <u><a href="https://github.com/dinosaur-oatmeal" style="color: var(--accent); text-decoration: none;">DINOSAUR-OATMEAL</a></strong></u>
+
+      <div style="margin-bottom: 45px;">
+        <span class="observation-label">SOURCE ARCHIVE</span>
+        <strong>GITHUB:</strong><br>
+        <a href="https://github.com/dinosaur-oatmeal" target="_blank" style="color: var(--accent); text-decoration: none;">
+          dinosaur-oatmeal
+        </a>
       </div>
 
-      <div style="margin-bottom: 50px;">
-        <span class="observation-label">SYSTEM_SPEC</span>
-        <div style="font-size: 0.72rem; line-height: 1.4;">
-          <strong>CORE_STACK:</strong> Python, C, Java <br> <br>
-          <strong>FORECASTING_FOCUS:</strong> Time-series, Rare Events, Calibration <br> <br>
-          <strong>ML_CORE:</strong> PyTorch, TensorFlow, Scikit-learn <br> <br>
-          <strong>MODEL_DIAGNOSTICS:</strong> SHAP, PCA, Prevalence Bias <br> <br>
-          <strong>SPATIAL_DATA:</strong> GeoPandas, Folium, Matplotlib <br> <br>
-          <strong>DEPLOYMENT:</strong> FastAPI, Docker, GitHub Actions
+      <div style="margin-bottom: 45px;">
+        <span class="observation-label">PROJECT THEMES</span>
+        <hr class="sep-line">
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-dim); line-height: 1.8;">
+          Real-time inference<br>
+          Educational visualization<br>
+          Human-computer interaction<br>
+          Constraint-based systems<br>
+          Model interpretability
         </div>
       </div>
 
-      <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 50px; padding: 1.5rem;">
-        <span class="observation-label" style="color: var(--risk-green);">IMPACT_METRIC</span>
-        <strong>Instructional Adoption</strong> <br>
-        <span style="font-size: 0.70rem; color: var(--ink-dim);">
-          Algorithm platform used by 50+ students/semester in UTA CS curriculum.
+      <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 45px; padding: 1.5rem;">
+        <span class="observation-label" style="color: var(--risk-green);">INSTRUCTIONAL IMPACT</span>
+        <span style="font-size: 0.72rem; color: var(--ink-dim); line-height: 1.65; display: block;">
+          Algorithm platform adopted as supplemental material for UTA Computer Science instruction,
+          supporting 50+ students per semester.
         </span>
+      </div>
+
+      <div style="margin-bottom: 45px;">
+        <span class="observation-label">TECHNICAL DETAILS</span>
+        <hr class="sep-line">
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-dim); line-height: 1.8;">
+          Python / TensorFlow / OpenCV<br>
+          MediaPipe hand landmarks<br>
+          Elm interactive interfaces<br>
+          API-backed game logic<br>
+          Data visualization and pedagogy
+        </div>
       </div>
 
       <span class="observation-label" style="font-size: 1.0rem;">DIRECTORY</span>
       <hr class="sep-line">
+
       <nav style="display: grid; gap: 18px;">
-        <a href="index.html">1. <span style="color: var(--accent)">IDENTITY</span></a>
-        <a href="research.html">2. <span style="color: var(--accent);">RESEARCH_INTEREST</span></a>
-        <a href="projects.html">3. <span style="color: var(--ink);">TECH_APPENDIX</span></a>
-        <a href="experience.html">4. <span style="color: var(--accent);">FIELD_EXPERIENCE</span></a>
-        <a href="gallery.html">5. <span style="color: var(--accent);">GALLERY_ENTRIES</span></a>
+        <a href="index.html">1. <span style="color: var(--accent)">PROFILE</span></a>
+        <a href="research.html">2. <span style="color: var(--accent);">RESEARCH</span></a>
+        <a href="projects.html">3. <span style="color: var(--ink);">PROJECTS</span></a>
+        <a href="experience.html">4. <span style="color: var(--accent);">EXPERIENCE</span></a>
+        <a href="gallery.html">5. <span style="color: var(--accent);">GALLERY</span></a>
         <a href="files/Will_Maberry_Resume.pdf">6.
           <span style="font-weight: 700; color: var(--accent);">
-            VIEW_CV.PDF
+            RESUME.PDF
           </span>
         </a>
       </nav>
@@ -122,6 +186,8 @@
   <footer style="margin-top: 5vh; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); display: flex; justify-content: space-between;">
     <div>© 2026 WILL_MABERRY</div>
   </footer>
+
+</div>
 </div>
 
 <script src="app.js"></script>

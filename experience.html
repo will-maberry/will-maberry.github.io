@@ -2,61 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WILL_MABERRY // 004</title>
+  <title>Will Maberry // Experience</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%2379c0ff' d='M483.5 227.6c4.5 4.5 4.5 11.8 0 16.3-2.1 2.1-4.9 3.3-7.8 3.3h-31.5c-4.6 30.6-18.6 58.5-39.4 81.4l22.3 22.3c6.4 6.4 6.4 16.7 0 23.1-3.2 3.2-7.4 4.8-11.5 4.8s-8.4-1.6-11.5-4.8l-22.3-22.3c-22.9 20.8-50.8 34.8-81.4 39.4v31.5c0 9-7.3 16.3-16.3 16.3-4.3 0-8.5-1.7-11.5-4.8s-4.8-7.2-4.8-11.5v-31.5c-30.6-4.6-58.5-18.6-81.4-39.4l-22.3 22.3c-6.4 6.4-16.7 6.4-23.1 0-6.4-6.4-6.4-16.7 0-23.1l22.3-22.3c-20.8-22.9-34.8-50.8-39.4-81.4H39.3c-9 0-16.3-7.3-16.3-16.3 0-4.3 1.7-8.5 4.8-11.5s7.2-4.8 11.5-4.8h31.5c4.6-30.6 18.6-58.5 39.4-81.4L87.9 111.4c-6.4-6.4-6.4-16.7 0-23.1 6.4-6.4 16.7-6.4 23.1 0l22.3 22.3c22.9-20.8 50.8-34.8 81.4-39.4V40c0-9 7.3-16.3 16.3-16.3 9 0 16.3 7.3 16.3 16.3v31.5c30.6 4.6 58.5 18.6 81.4 39.4l22.3-22.3c6.4-6.4 16.7-6.4 23.1 0 6.4 6.4 6.4 16.7 0 23.1l-22.3 22.3c20.8 22.9 34.8 50.8 39.4 81.4h31.5c9 0 16.3 7.3 16.3 16.3 0 4.3-1.7 8.5-4.8 11.5z'/></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
 
+<body class="home-page">
+
+<div class="curtain-layer">
 <div class="container">
-  <header style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 12vh; font-family: var(--font-mono); font-size: 0.7rem; margin-right: 5%;">
+
+  <header style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 11vh; font-family: var(--font-mono); font-size: 0.7rem; margin-right: 5%;">
     <div class="theme-toggle">
       <span>THEME</span>
       <button id="theme-toggle" type="button">DARK</button>
     </div>
+
     <div style="text-align: right;">
-      <span id="sys-status" style="color: var(--risk-green);">SYSTEM_READY</span> <br>
-      <span style="color: var(--ink-dim);">ENTRY_DATE: <span id="current-date">0000.00.00</span></span>
+      <span style="color: var(--risk-green);">STATUS: ACTIVE</span><br>
+      <span style="color: var(--ink-dim);">UPDATED: <span id="current-date">2026.05</span></span>
     </div>
   </header>
 
   <main>
-    
+
     <article style="position: relative;">
+
       <div class="stamp-container">
-        <div class="stamp">RESEARCH: USDA_ARS</div>
-        <div class="stamp">INDUSTRY: OPENAI</div>
-        <div class="stamp">STATION: UTA_CS</div>
+        <div class="stamp">OPENAI</div>
+        <div class="stamp">USDA_ARS</div>
+        <div class="stamp">MSU_COMPBIO</div>
       </div>
 
-      <span class="observation-label">OBSERVATION_04 // FIELD_EXPERIENCE</span>
-      <h1>Research,<br>Teaching,<br><i><span style="color: var(--accent);">and</span></i> Comms.</h1>
+      <span class="observation-label">EXPERIENCE RECORD</span>
 
-      <div style="display: grid; gap: 45px;">
-        
+      <h1>
+        Research,<br>
+        Teaching,<br>
+        <i><span style="color: var(--accent);">and</span></i> Technical Community.
+      </h1>
+
+      <p style="font-size: 1.5rem; max-width: 610px; margin-bottom: 2.75rem;">
+        My experience sits at the intersection of applied machine learning, biosurveillance research,
+        technical education, and large-scale AI community engagement.
+      </p>
+
+      <div style="display: grid; gap: 34px; margin-top: 2rem;">
+
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">USDA_ARS // RESEARCH_ASSISTANT (PART-TIME)</span>
-          <p>Developing county-level HPAI classification and one-month-ahead forecasting systems for proactive outbreak response. Engineering walk-forward retraining, leakage-safe feature pipelines, and rare-event evaluation for operational use.</p>
+          <span class="label">USDA_ARS // RESEARCH_ASSISTANT</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            Forward-Looking HPAI Forecasting
+          </h2>
+          <p class="small">
+            Developing a national-scale county-month HPAI forecasting framework for the continental United States
+            using environmental, agricultural, and geospatial data streams.
+          </p>
+          <p class="small">
+            Building leakage-safe forecasting pipelines with forward-only data truncation, forecast-month feature
+            generation, persisted artifacts, automated monthly backtesting, and spatiotemporal model evaluation.
+          </p>
           <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); margin-top: 10px;">
-            PERIOD: JULY 2025 – PRESENT // UT_ARLINGTON
+            PERIOD: JULY 2025 – PRESENT // USDA ARS
           </div>
         </section>
 
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">USDA_ARS // RESEARCH_ASSISTANT (INTERNSHIP)</span>
-          <p>Built the county-month machine learning framework across the conterminous United States, integrating environmental, climatological, and geospatial features. Presented feature-importance and diagnostic results to USDA scientists and program leadership.</p>
+          <span class="label">USDA_ARS // RESEARCH_INTERN</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            National HPAI Risk Classification
+          </h2>
+          <p class="small">
+            Developed county-level HPAI risk classification and pseudo-forecasting models using environmental
+            and climate covariates across the continental United States.
+          </p>
+          <p class="small">
+            Achieved 75%+ balanced accuracy on highly imbalanced outbreak surveillance data and presented
+            research findings to the USDA ARS Chief Scientist and multiple National Program Leaders.
+          </p>
           <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); margin-top: 10px;">
-            PERIOD: MAY 2025 – JULY 2025 // UT_ARLINGTON
+            PERIOD: MAY 2025 – JULY 2025 // USDA ARS
           </div>
         </section>
 
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">OPENAI // ENGAGEMENT_MANAGER (CONTRACT)</span>
-          <p>Designing public-facing programs for OpenAI's largest online community of 850k+ users.
-            Synthesizing feedback for technical product launches and reporting KPIs to upper management.
+          <span class="label">OPENAI // ENGAGEMENT_MANAGER</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            AI Community Programming
+          </h2>
+          <p class="small">
+            Scaled OpenAI’s official Discord community to 850k+ users through technical programming,
+            online events, product-adjacent engagement, and community initiatives.
+          </p>
+          <p class="small">
+            Supported large-scale AI education, user feedback loops, and public-facing programming around
+            emerging OpenAI tools and technical topics.
           </p>
           <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); margin-top: 10px;">
             PERIOD: JULY 2024 – PRESENT // REMOTE
@@ -64,12 +107,16 @@
         </section>
 
         <section style="border-left: 1px solid var(--accent); padding-left: 24px;">
-          <span class="label">UTA_CS // OPERATING_SYSTEMS_TA (PART-TIME)</span>
-          <p>Mentoring ~120 students on multi-threading, scheduling, and memory management.
-            Held multiple weekly office hours, emphasizing low-level debugging techniques via GDB.
+          <span class="label">UTA_CS // TEACHING_ASSISTANT</span>
+          <h2 style="font-size: 1.55rem; font-weight: 300; margin: 0.5rem 0 0.75rem;">
+            Operating Systems Instruction
+          </h2>
+          <p class="small">
+            Supported 120+ students through office hours, review sessions, and course support for scheduling,
+            synchronization, memory management, and low-level debugging.
           </p>
           <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); margin-top: 10px;">
-            PERIOD: JAN 2025 – MAY 2025 // UT_ARLINGTON
+            PERIOD: JANUARY 2025 – MAY 2025 // UT ARLINGTON
           </div>
         </section>
 
@@ -77,46 +124,49 @@
     </article>
 
     <aside class="marginalia">
-      <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 50px; padding: 1.5rem;">
-        <span class="observation-label" style="color: var(--risk-green);">LEADERSHIP_LOG</span>
-        
-        <div style="margin-top: 15px; font-size: 0.72rem; line-height: 1.6; font-family: var(--font-mono);">       
-          <strong>ACM_EDUCATION</strong> <br>
-          > Role: ACM Educate Director <br>
-          > Scale: 1400+ Students <br>
-          > Focus: Coding Literacy <br><br>
 
-          <strong>CSE_ADVISORY</strong> <br>
-          > Context: Department Leadership <br>
-          > Outcome: Enhance Student Experience <br><br>
+      <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 45px; padding: 1.5rem;">
+        <span class="observation-label" style="color: var(--risk-green);">RESEARCH CONTINUITY</span>
+        <span style="font-size: 0.72rem; color: var(--ink-dim); line-height: 1.65; display: block;">
+          USDA ARS research internship extended into an ongoing research assistant role,
+          publication submission, and a fully funded graduate appointment at Mississippi State University.
+        </span>
+      </div>
 
-          <strong>HACK_UTA</strong> <br>
-          > Role: Experience Officer <br>
-          > Impact: 450+ Participants <br>
-          > Tech: Onsite Database Troubleshooting <br><br>
-          
-          <strong>PERPLEXITY_PARTNER</strong> <br>
-          > Target: 40,000+ Student Body <br>
-          > Intent: Ethical AI Usage <br><br>
-
-          <strong>THE_WESLEY_BOARD</strong> <br>
-          > Status: Sole Student Rep <br>
-          > Budget: $100K+ Oversight <br>
-          > Action: Led Director Interviews
+      <div style="margin-bottom: 45px;">
+        <span class="observation-label">IMPACT METRICS</span>
+        <hr class="sep-line">
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-dim); line-height: 1.8;">
+          HPAI forecasting systems<br>
+          75%+ balanced accuracy<br>
+          USDA ARS leadership presentation<br>
+          OpenAI community scale: 850k+ users<br>
+          Operating Systems TA: 120+ students
         </div>
+      </div>
+
+      <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 45px; padding: 1.5rem;">
+        <span class="observation-label" style="color: var(--risk-green);">LEADERSHIP LOG</span>
+        <span style="font-size: 0.72rem; color: var(--ink-dim); line-height: 1.65; display: block;">
+          ACM Education Director for 1,500+ member organization<br>
+          15+ professional and educational workshops led<br>
+          HackUTA Experience Officer for 500+ participants<br>
+          Sole student representative on Board of Directors overseeing $100k/year budget
+        </span>
       </div>
 
       <span class="observation-label" style="font-size: 1.0rem;">DIRECTORY</span>
       <hr class="sep-line">
+
       <nav style="display: grid; gap: 18px;">
-        <a href="index.html">1. <span style="color: var(--accent)">IDENTITY</span></a>
-        <a href="research.html">2. <span style="color: var(--accent);">RESEARCH_INTEREST</span></a>
-        <a href="projects.html">3. <span style="color: var(--accent);">TECH_APPENDIX</span></a>
-        <a href="experience.html">4. <span style="color: var(--ink);">FIELD_EXPERIENCE</span></a>
-        <a href="gallery.html">5. <span style="color: var(--accent);">GALLERY_ENTRIES</span></a>
+        <a href="index.html">1. <span style="color: var(--accent)">PROFILE</span></a>
+        <a href="research.html">2. <span style="color: var(--accent);">RESEARCH</span></a>
+        <a href="projects.html">3. <span style="color: var(--accent);">PROJECTS</span></a>
+        <a href="experience.html">4. <span style="color: var(--ink);">EXPERIENCE</span></a>
+        <a href="gallery.html">5. <span style="color: var(--accent);">GALLERY</span></a>
         <a href="files/Will_Maberry_Resume.pdf">6.
           <span style="font-weight: 700; color: var(--accent);">
-            VIEW_CV.PDF
+            RESUME.PDF
           </span>
         </a>
       </nav>
@@ -127,6 +177,8 @@
   <footer style="margin-top: 5vh; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); display: flex; justify-content: space-between;">
     <div>© 2026 WILL_MABERRY</div>
   </footer>
+
+</div>
 </div>
 
 <script src="app.js"></script>
