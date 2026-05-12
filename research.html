@@ -31,9 +31,9 @@
     <article style="position: relative;">
 
       <div class="stamp-container">
-        <div class="stamp">OPENAI</div>
-        <div class="stamp">USDA_ARS</div>
-        <div class="stamp">MSU_COMPBIO</div>
+        <div class="stamp">USDA_ARS_Research_Assistant</div>
+        <div class="stamp">Viral_Disease_Forecasting</div>
+        <div class="stamp">Miss_State_Vet_&_Biomed_Science</div>
       </div>
 
       <span class="observation-label">RESEARCH SYSTEM</span>
@@ -50,10 +50,10 @@
       </p>
 
       <div class="data-box">
-        <div class="data-row"><span class="data-key">DOMAIN:</span> <span>Highly Pathogenic Avian Influenza</span></div>
-        <div class="data-row"><span class="data-key">SCALE:</span> <span>CONUS county-month forecasting</span></div>
+        <div class="data-row"><span class="data-key">DOMAIN:</span> <span>H5N1 Highly Pathogenic Avian Influenza</span></div>
+        <div class="data-row"><span class="data-key">SCALE:</span> <span>county-month forecasting</span></div>
         <div class="data-row"><span class="data-key">HORIZON:</span> <span>One-month-ahead outbreak risk</span></div>
-        <div class="data-row"><span class="data-key">OUTPUT:</span> <span>County-level risk maps and decision-support artifacts</span></div>
+        <div class="data-row"><span class="data-key">OUTPUT:</span> <span>Interactive county-level risk maps</span></div>
       </div>
 
       <h2 style="font-size: 1.8rem; font-weight: 300; margin-top: 3rem;">Forecasting Framework</h2>
@@ -62,7 +62,7 @@
         <div style="border-left: 1px solid var(--accent); padding-left: 20px;">
           <span class="label">COUNTY_MONTH_MODELING</span>
           <p class="small">
-            Modeling HPAI outbreak risk across counties in the continental United States using environmental,
+            Modeling HPAI outbreak risk across the conterminous United States using environmental,
             agricultural, climatological, and geospatial data streams.
           </p>
         </div>
@@ -71,23 +71,22 @@
           <span class="label">LEAKAGE_SAFE_PIPELINES</span>
           <p class="small">
             Building forward-only forecasting infrastructure with time-gated feature construction,
-            forecast-month feature generation, persisted artifacts, and monthly backtesting.
+            persisted artifacts, and monthly backtesting.
           </p>
         </div>
 
         <div style="border-left: 1px solid var(--accent); padding-left: 20px;">
           <span class="label">SPATIOTEMPORAL_LEARNING</span>
           <p class="small">
-            Evaluating graph-based and spatiotemporal model architectures over county adjacency networks
-            to capture regional disease dynamics and cross-county outbreak structure.
+            Evaluating graph-based and spatiotemporal ML model architectures over county adjacency networks,
+            capturing regional disease dynamics.
           </p>
         </div>
 
         <div style="border-left: 1px solid var(--accent); padding-left: 20px;">
           <span class="label">RARE_EVENT_EVALUATION</span>
           <p class="small">
-            Designing evaluation workflows for highly imbalanced surveillance data, prioritizing balanced accuracy,
-            recall, and model calibration.
+            Designing evaluation workflows for highly imbalanced data (~1% positives), prioritizing balanced accuracy and recall.
           </p>
         </div>
 
@@ -95,7 +94,7 @@
           <span class="label">DECISION_SUPPORT_OUTPUTS</span>
           <p class="small">
             Translating model outputs into interpretable county-level risk maps, diagnostics, and interactive
-            web-based tools for biosurveillance and response planning.
+            web-based tools for disease biosurveillance.
           </p>
         </div>
       </div>
@@ -110,7 +109,7 @@
         &gt; County risk classifications<br>
         &gt; One-month forecast maps<br>
         &gt; Backtesting diagnostics<br>
-        &gt; Attribution and calibration review
+        &gt; Model calibration reports
       </div>
 
       <div class="taped-data" style="background: rgba(99, 102, 241, 0.08); border: 1px solid var(--accent); margin-bottom: 45px; padding: 1.5rem;">
@@ -118,8 +117,8 @@
         <span style="font-size: 0.72rem; color: var(--ink-dim); line-height: 1.65; display: block;">
           Forward-only temporal truncation<br>
           Held-out county-month evaluation<br>
-          Monthly backtesting artifacts<br>
-          Rare-event performance review
+          Automated monthly backtesting<br>
+          Rare-event model tuning
         </span>
       </div>
 
@@ -127,10 +126,10 @@
         <span class="observation-label">RESEARCH THEMES</span>
         <hr class="sep-line">
         <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-dim); line-height: 1.8;">
-          Proactive biosurveillance<br>
           Spatiotemporal forecasting<br>
-          Rare-event disease modeling<br>
-          Geospatial risk interpretation
+          Computational epidemiology<br>
+          Geospatial machine learning<br>
+          Biosurveillance systems
         </div>
       </div>
 
