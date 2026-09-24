@@ -36,41 +36,11 @@
         Work.
       </h1>
 
-      <p style="font-size: 1.15rem; max-width: 560px; margin-bottom: 2.5rem;">
+      <p class="gallery-intro">
         Photographs from places I've visited, things I've noticed,
         and moments I enjoyed.
       </p>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 40px; margin-top: 2rem;">
-
-        <a href="images/Big-Bend.webp" class="polaroid-artifact" target="_blank" style="transform: rotate(2.5deg);">
-          <img src="images/Big-Bend.webp" alt="Big Bend National Park, Tx">
-          <div style="font-family: var(--font-mono); font-size: 0.55rem; text-align: center; margin-top: 10px; color: #333;">
-            BIG_BEND_NATIONAL_PARK
-          </div>
-        </a>
-
-        <a href="images/Cabin.webp" class="polaroid-artifact" target="_blank" style="transform: rotate(-1.5deg);">
-          <img src="images/Cabin.webp" alt="Rustic cabin, Washington on the Brazos TX">
-          <div style="font-family: var(--font-mono); font-size: 0.55rem; text-align: center; margin-top: 10px; color: #333;">
-            WASHINGTON_ON_THE_BRAZOS
-          </div>
-        </a>
-
-        <a href="images/Historic-Home.webp" class="polaroid-artifact" target="_blank" style="transform: rotate(3deg);">
-          <img src="images/Historic-Home.webp" alt="Giddings Stone Mansion, Brenham TX">
-          <div style="font-family: var(--font-mono); font-size: 0.55rem; text-align: center; margin-top: 10px; color: #333;">
-            GIDDINGS_STONE_HOUSE
-          </div>
-        </a>
-
-        <a href="images/Botanical_Garden.webp" class="polaroid-artifact" target="_blank" style="transform: rotate(-2deg);">
-          <img src="images/Botanical_Garden.webp" alt="Botanical Gardens, Fort Worth TX">
-          <div style="font-family: var(--font-mono); font-size: 0.55rem; text-align: center; margin-top: 10px; color: #333;">
-            BOTANICAL_GARDEN
-          </div>
-        </a>
-      </div>
     </article>
 
     <aside class="marginalia">
@@ -98,11 +68,112 @@
     </aside>
   </main>
 
+  <section class="photo-gallery" aria-label="Photography gallery">
+    <div class="photo-wall">
+
+      <figure class="photo-artifact">
+        <button class="photo-open" type="button" data-full="images/Mountain_Bluebird.webp" data-title="MOUNTAIN_BLUEBIRD" data-meta="" aria-label="View mountain bluebird photograph">
+          <img src="images/Mountain_Bluebird.webp" alt="Mountain bluebird in its natural surroundings" loading="lazy">
+        </button>
+        <figcaption><span>Mountain_Bluebird</span><small>Crested Butte, Colorado</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-crop">
+        <button class="photo-open" type="button" data-full="images/Botanical_Garden.webp" data-title="BOTANICAL_GARDEN" data-meta="FORT WORTH, TEXAS" aria-label="View Fort Worth Botanical Garden photograph">
+          <img src="images/Botanical_Garden.webp" alt="Botanical Gardens in Fort Worth, Texas" loading="lazy">
+        </button>
+        <figcaption><span>Japanese_Garden</span><small>Fort Worth, Texas</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-featured">
+        <button class="photo-open" type="button" data-full="images/Cabin.webp" data-title="WASHINGTON_ON_THE_BRAZOS" data-meta="TEXAS" aria-label="View Washington on the Brazos photograph">
+          <img src="images/Cabin.webp" alt="Rustic cabin at Washington on the Brazos, Texas" loading="lazy">
+        </button>
+        <figcaption><span>Washington_on_the_Brazos</span><small>Washington County, Texas</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-crop">
+        <button class="photo-open" type="button" data-full="images/Milky_Way.webp" data-title="MILKY_WAY" data-meta="" aria-label="View Milky Way photograph">
+          <img src="images/Milky_Way.webp" alt="The Milky Way in a night sky" loading="lazy">
+        </button>
+        <figcaption><span>Milky_Way</span><small>Crested Butte, Colorado</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-crop">
+        <button class="photo-open" type="button" data-full="images/Forest_Waterfall.webp" data-title="FOREST_WATERFALL" data-meta="" aria-label="View forest waterfall photograph">
+          <img src="images/Forest_Waterfall.webp" alt="Waterfall surrounded by forest" loading="lazy">
+        </button>
+        <figcaption><span>Forest_Waterfall</span><small>Devil's Punch Bowl, Colorado</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-featured">
+        <button class="photo-open" type="button" data-full="images/Big-Bend.webp" data-title="BIG_BEND_NATIONAL_PARK" data-meta="TEXAS" aria-label="View Big Bend National Park photograph">
+          <img src="images/Big-Bend.webp" alt="Landscape in Big Bend National Park, Texas" loading="lazy">
+        </button>
+        <figcaption><span>Desert_Landscape</span><small>Big Bend National Park, Texas</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact">
+        <button class="photo-open" type="button" data-full="images/Coyote.webp" data-title="COYOTE" data-meta="" aria-label="View coyote photograph">
+          <img src="images/Coyote.webp" alt="Coyote in its natural surroundings" loading="lazy">
+        </button>
+        <figcaption><span>Coyote_in_Snow</span><small>Roaring Judy's Fish Hatchery, Colorado</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact">
+        <button class="photo-open" type="button" data-full="images/Mormon_Row.webp" data-title="MORMON_ROW" data-meta="" aria-label="View Mormon Row photograph">
+          <img src="images/Mormon_Row.webp" alt="Historic buildings at Mormon Row" loading="lazy">
+        </button>
+        <figcaption><span>Mormon_Row</span><small>Mormon Row, Grand Teton National Park, Wyoming</small></figcaption>
+      </figure>
+
+
+      <figure class="photo-artifact photo-featured">
+        <button class="photo-open" type="button" data-full="images/Snowplow.webp" data-title="SNOWPLOW" data-meta="" aria-label="View snowplow photograph">
+          <img src="images/Snowplow.webp" alt="Snowplow at work in winter conditions" loading="lazy">
+        </button>
+        <figcaption><span>Snowplow</span><small>Crested Butte, Colorado</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact">
+        <button class="photo-open" type="button" data-full="images/French_Church.webp" data-title="Sœurs de Saint-André" data-meta="" aria-label="View French church photograph">
+          <img src="images/French_Church.webp" alt="Church photographed in France" loading="lazy">
+        </button>
+        <figcaption><span>Sœursde Saint-André</span><small>Ameugny, France</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-crop">
+        <button class="photo-open" type="button" data-full="images/Historic-Home.webp" data-title="GIDDINGS_STONE_HOUSE" data-meta="BRENHAM, TEXAS" aria-label="View Giddings Stone Mansion photograph">
+          <img src="images/Historic-Home.webp" alt="Giddings Stone Mansion in Brenham, Texas" loading="lazy">
+        </button>
+        <figcaption><span>Giddings_Stone_Mansion</span><small>Brenham, Texas</small></figcaption>
+      </figure>
+
+      <figure class="photo-artifact photo-crop">
+        <button class="photo-open" type="button" data-full="images/Flowers.webp" data-title="MOUNTAIN_FLOWERS" data-meta="" aria-label="View flower photograph">
+          <img src="images/Flowers.webp" alt="Flowers in a garden" loading="lazy">
+        </button>
+        <figcaption><span>Mountain_Flowers</span><small>Trail #418, Colorado</small></figcaption>
+      </figure>
+
+    </div>
+  </section>
+
   <footer style="margin-top: 5vh; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); font-family: var(--font-mono); font-size: 0.65rem; color: var(--ink-dim); display: flex; justify-content: space-between;">
     <div>© <span id="current-year">2026</span> WILL_MABERRY</div>
   </footer>
 
 </div>
+</div>
+
+<div class="photo-lightbox" id="photo-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Expanded photograph">
+  <button class="lightbox-close" type="button" aria-label="Close photograph">&times;</button>
+  <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photograph">&larr;</button>
+  <div class="lightbox-content">
+    <img id="lightbox-image" src="" alt="">
+    <div class="lightbox-caption"><span id="lightbox-title"></span><small id="lightbox-meta"></small></div>
+  </div>
+  <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photograph">&rarr;</button>
 </div>
 
 <script src="app.js"></script>

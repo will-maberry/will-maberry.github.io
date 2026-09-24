@@ -120,3 +120,143 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* =========================
+   PHOTOGRAPHY LIGHTBOX
+   ========================= */
+
+const galleryItems = Array.from(
+  document.querySelectorAll(".photo-open")
+);
+
+const lightbox = document.getElementById("photo-lightbox");
+
+if (galleryItems.length && lightbox) {
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxTitle = document.getElementById("lightbox-title");
+  const lightboxMeta = document.getElementById("lightbox-meta");
+
+  const closeButton = lightbox.querySelector(".lightbox-close");
+  const previousButton = lightbox.querySelector(".lightbox-prev");
+  const nextButton = lightbox.querySelector(".lightbox-next");
+
+  let currentIndex = 0;
+  let previouslyFocused = null;
+
+
+  function showPhoto(index) {
+    /* Wrap around either end of the gallery */
+    currentIndex =
+      (index + galleryItems.length) % galleryItems.length;
+
+    const item = galleryItems[currentIndex];
+    const image = item.querySelector("img");
+
+    lightboxImage.src = item.dataset.full || image.src;
+    lightboxImage.alt = image.alt;
+
+    lightboxTitle.textContent =
+      item.dataset.title || "";
+
+    lightboxMeta.textContent =
+      item.dataset.meta || "";
+  }
+
+
+  function openLightbox(index) {
+    previouslyFocused = document.activeElement;
+    showPhoto(index);
+
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+
+    closeButton.focus();
+  }
+
+
+  function closeLightbox() {
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+    (previouslyFocused || galleryItems[currentIndex]).focus();
+  }
+
+
+  galleryItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      openLightbox(index);
+    });
+  });
+
+
+  closeButton.addEventListener("click", closeLightbox);
+
+
+  previousButton.addEventListener("click", () => {
+    showPhoto(currentIndex - 1);
+  });
+
+
+  nextButton.addEventListener("click", () => {
+    showPhoto(currentIndex + 1);
+  });
+
+
+  /*
+   * Clicking the dark background closes the lightbox,
+   * but clicking the photograph itself does not.
+   */
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+
+  /*
+   * Keyboard controls:
+   * ESC       close
+   * LEFT      previous
+   * RIGHT     next
+   */
+  document.addEventListener("keydown", (event) => {
+    if (!lightbox.classList.contains("is-open")) {
+      return;
+    }
+
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
+
+    if (event.key === "ArrowLeft") {
+      showPhoto(currentIndex - 1);
+    }
+
+    if (event.key === "ArrowRight") {
+      showPhoto(currentIndex + 1);
+    }
+  });
+
+  // Keep keyboard focus inside the modal while it is open.
+  lightbox.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") return;
+
+    const focusable = Array.from(
+      lightbox.querySelectorAll('button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+}
